@@ -1,10 +1,11 @@
 ---
-const { href, title, body, thumbnail } = Astro.props;
+const { href, title, body, text, thumbnail } = Astro.props;
 ---
+
 <article>
-<a href={href}>
-  <h2>{title}</h2>
-  <img src=`/images/${thumbnail}` alt={title} />
-  <p>{body}</p>
-</a>
+  <a href={href}>
+    <h2>{title}</h2>
+    <img src=`/images/${thumbnail}` alt={title} />
+    <p>{text}</p>
+  </a>
 </article>
